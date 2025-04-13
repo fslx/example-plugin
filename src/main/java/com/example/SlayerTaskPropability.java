@@ -2,6 +2,8 @@ package com.example;
 
 import com.google.inject.Provides;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
@@ -17,10 +19,11 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Slayer Task Propability"
 )
-public class ExamplePlugin extends Plugin
+public class SlayerTaskPropability extends Plugin
 {
+	
 	@Inject
 	private Client client;
 
@@ -89,7 +92,7 @@ public class ExamplePlugin extends Plugin
 	public static final List<String> listOfBestSlayerTasks = list.of(
 		"Abyssal Demons", "Nechryaels", "Dust Devils", "Smoke Devils", "Black Demons", "Araxxyte",
 		"Kraken", "Hydra", "Cerberus", "Dagannoth Kings",
-    	"Smoke Devils", "Lizardman Shaman", "Skeletal Wyverns"
+    	"Smoke Devils", "Lizardman Shaman", "Skeletal Wyverns", "Araxxor"
 	);
 	
 }
